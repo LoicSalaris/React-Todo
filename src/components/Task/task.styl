@@ -1,0 +1,36 @@
+@import '~/styles/vars'
+
+.todo-task
+  background-color: #fff
+  border-radius: 0.3em
+  border: 1px solid #ccc
+  margin: 0.5em 0
+  padding: 1em
+  font-size: 1.2em
+
+.todo-task--done
+  opacity: 0.5
+  text-decoration: line-through
+
+.todo-task--favorite
+  border: 1px solid $task-favorite-color
+  background: linear-gradient($task-favorite-gradient-start, $task-favorite-gradient-stop)
+
+  .todo-task-favorite
+    color: $task-favorite-color
+
+.todo-task-label
+  margin-left: 0.5em
+
+.task-delete,
+.task-favorite
+  float: right
+  cursor: pointer
+
+.task-delete
+  &:hover
+    color: $task-delete-color-hovered
+
+.task-favorite
+   &:hover
+    color: $task-favorite-color
